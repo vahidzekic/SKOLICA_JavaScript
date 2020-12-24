@@ -1,0 +1,51 @@
+body {
+    background-color: grey;
+    background-image: url("pozadina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  header {
+    background-color: transparent;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  div {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  a {
+    color: white;
+    font-size: 20px;
+  }
+
+  a:link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  a:hover {
+    color: blue;
+    background-color: white;
+    font-size: 25px;
+  }
+
+  a:active {
+    color: red;
+    background-color: darkblue;
+    font-size: 20px;
+  }
