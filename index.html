@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>JavaScript dipl.inz. Vahid Zekic</title>
   <meta charset="UTF-8">
@@ -8,6 +9,7 @@
   <meta date="22.12.2020.">
   <link href="css/mojiStilovi.css" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <p style="color: white;">Osnove JavaScript-a</p>
@@ -18,6 +20,7 @@
       <button onclick="mojIfElse()" style="font-size: 20px;">IF ... ELSE</button>
       <button onclick="mojIfElseifElse()" style="font-size: 20px;">IF ... ELSE IF ... ELSE</button>
       <button onclick="mojSwitch()" style="font-size: 20px;">SWITCH</button>
+      <button onclick="mojFor()" style="font-size: 20px;">FOR</button>
       <button onclick="mojWhile()" style="font-size: 20px;">WHILE</button>
       <button onclick="mojDoWhile()" style="font-size: 20px;">DO ... WHILE</button>
       <button onclick="mojTry()" style="font-size: 20px;">TRY ... CATCH</button>
@@ -38,6 +41,15 @@
       <p id="9"></p>
     </div>
 
+    <div>
+        <p>Unesite brojeve za sabiranje.</p>
+        <input id="ulazniPodatak1" type="number" required style="margin-left: 50px;"><br>
+        <input id="ulazniPodatak2" type="number" required style="margin-left: 50px;"><br>
+        <button onclick="mojTestEventa()" style="margin-left: 50px;">Ok</button>
+        <p id="izlazniPodatak"></p>
+      
+    </div>
+
   </main>
   <footer>
     <p style="text-align: center; color: white;">Sva prava zadrzava Novi Pazar 2020.</p>
@@ -55,6 +67,8 @@
   <script src="js/sortiranje.js"></script>
   <script src="js/objekti.js"></script>
   <script src="js/funkcije.js"></script>
+  <script src="js/evenets.js"></script>
 
 </body>
+
 </html>
