@@ -1,2 +1,2 @@
-# SKOLICA_JavaScript
+# ŠKOLICA JavaScript
  
