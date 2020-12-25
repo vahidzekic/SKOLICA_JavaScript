@@ -50,6 +50,21 @@
       
     </div>
 
+    <form style="color: white;" name="mojaForma" onsubmit="return mojaFunkcijaIme()">
+      Upisite vashe ime: <input type="text" name="forma_ime"><br>
+      <input type="submit" value="Prikazi">
+      
+    </form>
+
+    <div>
+      Upisite vashe ime: <input type="text" id="upisiIme" onkeydown="mojaFunkcijaIme()">
+      <button onclick="mojaFunkcijaIme()">Prikazi</button>
+      <p id="333"></p>
+    </div>
+
+
+
+
   </main>
   <footer>
     <p style="text-align: center; color: white;">Sva prava zadrzava Novi Pazar 2020.</p>
@@ -68,6 +83,9 @@
   <script src="js/objekti.js"></script>
   <script src="js/funkcije.js"></script>
   <script src="js/evenets.js"></script>
+  <script src="js/stringovi.js"></script>
+  <script src="js/nizovi.js"></script>
+  <script src="js/datum_objekat.js"></script>
 
 </body>
 

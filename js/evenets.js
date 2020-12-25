@@ -14,3 +14,6 @@ function mojTestEventa() {
     document.getElementById("izlazniPodatak").innerHTML = izlaz;
 
 }
+
+
+

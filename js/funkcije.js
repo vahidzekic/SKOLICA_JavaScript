@@ -22,6 +22,7 @@ function mojaFunkcija2() {
 
   x = document.getElementById("funkcija_input").value;
 
+
   if (x < 10) {
     text = "Broj " + x + " je manji od 10.";
   } else {
@@ -29,6 +30,21 @@ function mojaFunkcija2() {
   }
   document.getElementById("funkcija_rezultat").innerHTML = text;
 }
+
+function mojaFunkcijaIme() {
+  // var mojeIme = document.forms["mojaForma"] ["forma_ime"].value;
+  document.getElementById("upisiIme").style.backgroundColor = "red";
+  var mojeIme = document.getElementById("upisiIme").value;
+
+  // alert(mojeIme);
+  document.getElementById("333").innerHTML = mojeIme;
+}
+
+
+
+
+
+
 
 
 function pocetna() {
