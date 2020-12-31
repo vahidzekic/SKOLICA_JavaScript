@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <p style="color: white;">Osnove JavaScript-a</p>
+    <p class="naslov">Osnove JavaScript-a</p>
     <nav>
       <button onclick="pocetna()" style="font-size: 20px;">Osnove</button>
       <button onclick="tipoviPodatka()" style="font-size: 20px;">Tipovi Podataka</button>
@@ -24,7 +24,13 @@
       <button onclick="mojWhile()" style="font-size: 20px;">WHILE</button>
       <button onclick="mojDoWhile()" style="font-size: 20px;">DO ... WHILE</button>
       <button onclick="mojTry()" style="font-size: 20px;">TRY ... CATCH</button>
+      <button onclick="datumObjekatFn()" style="font-size: 20px;"> Datum Objekat</button>
       <button onclick="mojaMatematika()" style="font-size: 20px;">MATEMATIKA</button>
+    </nav>
+    <nav>
+      <button onclick="mojaGalerija()" style="font-size: 20px;">GALERIJA</button>
+      <button onclick="restApiGet()" style="font-size: 20px;">REST API - GET</button>
+      <button onclick="restApiPost()" style="font-size: 20px;">REST API - POST</button>
     </nav>
   </header>
   <main>
@@ -42,6 +48,26 @@
       <p id="9"></p>
     </div>
 
+    <div>
+
+      <table>
+        <tr>
+          <td><a href="img/html5.png"><img src="img/html5.png"></a></td>
+          <td><a href="img/html5.png"><img src="img/html5.png"></a></td>
+        </tr>
+        <tr>
+          <td><a><img src="img/html5.png"></a></td>
+          <td><a><img src="img/html5.png"></a></td>
+        </tr>
+      </table>
+
+
+    </div>
+
+    <button type="button" onclick="loadDoc()">Request data</button>
+
+    <p id="demo"></p>
+    <!-- 
     <div>
         <p>Unesite brojeve za sabiranje.</p>
         <input id="ulazniPodatak1" type="number" required style="margin-left: 50px;"><br>
@@ -78,11 +104,10 @@
       <p id="m6"></p>
       <p id="m7"></p>
     </div>
-
-
+ -->
   </main>
   <footer>
-    <p style="text-align: center; color: white;">Sva prava zadrzava Novi Pazar 2020.</p>
+    <p class="futer">Sva prava zadrzava Novi Pazar 2020.</p>
   </footer>
 
   <script src="js/tipoviPodataka.js"></script>
@@ -94,14 +119,17 @@
   <script src="js/while.js"></script>
   <!-- <script src="js/dowhile.js"></script> -->
   <script src="js/tryCatch.js"></script>
-  <script src="js/sortiranje.js"></script>
-  <script src="js/objekti.js"></script>
-  <script src="js/funkcije.js"></script>
+  <!-- <script src="js/sortiranje.js"></script> -->
+  <!-- <script src="js/objekti.js"></script> -->
+  <!-- <script src="js/funkcije.js"></script> -->
   <script src="js/evenets.js"></script>
-  <script src="js/stringovi.js"></script>
-  <script src="js/nizovi.js"></script>
-  <script src="js/datum_objekat.js"></script>
+  <!-- <script src="js/stringovi.js"></script> -->
+  <!-- <script src="js/nizovi.js"></script> -->
+  <!-- <script src="js/datum_objekat.js"></script> -->
   <script src="js/matematika.js"></script>
+
+  <script src="js/galerija.js"></script>
+  <script src="js/konektor_rest.js"></script>
 
 </body>
 
