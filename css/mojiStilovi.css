@@ -16,6 +16,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     margin-left: 100px;
     margin-right: 100px;
+    border-radius: 7px;
   }
 
   p {
@@ -36,6 +37,7 @@ body {
     background-color: red;
     border: 0px;
     padding: 10px;
+    border-radius: 5px;
   }
 
 
@@ -78,6 +80,8 @@ table, th, tr, td {
 
 img {
   height: 100px;
+  color: red;
+  padding: 10px;
 }
 
 img:hover {
@@ -89,10 +93,12 @@ img:hover {
 @keyframes galerija {
   from {
     height: 100px;
+    width: 100px;
     opacity: 1.0;
   }
   to {
     height: 200px;
+    width: 200px;
     opacity: 0.2;
   }
 }

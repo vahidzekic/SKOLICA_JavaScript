@@ -11,10 +11,7 @@ function tipoviPodatka() {
     document.getElementById("1").innerHTML = niz[2];
     document.getElementById("2").innerHTML = broj1 + " " + string1 + " " + boolean;
     document.getElementById("3").innerHTML = lista;
-    document.getElementById("4").innerHTML = " ";
-    document.getElementById("5").innerHTML = " ";
-    document.getElementById("6").innerHTML = " ";
-    document.getElementById("7").innerHTML = " ";
-    document.getElementById("8").innerHTML = " ";
-    document.getElementById("9").innerHTML = " ";
+    for(var i = 4; i < 9; i++){
+        document.getElementById(i).innerHTML = " ";
+    }
 }
