@@ -61,24 +61,24 @@ objekatJson = [
 
 
 async function restApiGet() {
-    // const zahtev = await fetch("http://localhost:5000/get")
-    // const odgovor = await zahtev.json();
+    const zahtev = await fetch("http://localhost:5000/get")
+    const odgovor = await zahtev.json();
 
-    var brojElemenataJson = Object.keys(objekatJson).length;
+    var brojElemenataJson = Object.keys(odgovor).length;
 
     document.getElementById("0").innerHTML = "Trenutno se nalazi " + brojElemenataJson + " elemenata u JOSN bazi.";
 
     // ispisuje podatke iz JSON objekata pokupljenog sa servera
-    // for (const clanovi in odgovor) {
-    //     var clan = odgovor[clanovi].ime + " " + odgovor[clanovi].prezime;
-    //     document.getElementById(clanovi).innerHTML = clan;
-    // }
-
-    // ispisuje podatke iz lokalnog JSON objekta
-    for (const clanovi in objekatJson) {
-        var clan = objekatJson[clanovi].ime + " " + objekatJson[clanovi].prezime;
+    for (const clanovi in odgovor) {
+        var clan = odgovor[clanovi].ime + " " + odgovor[clanovi].prezime + " Osoba ima " + odgovor[clanovi].pol;
         document.getElementById(clanovi).innerHTML = clan;
     }
+
+    // ispisuje podatke iz lokalnog JSON objekta
+    // for (const clanovi in objekatJson) {
+    //     var clan = objekatJson[clanovi].ime + " " + objekatJson[clanovi].prezime;
+    //     document.getElementById(clanovi).innerHTML = clan;
+    // }
 
 }
 
@@ -101,3 +101,7 @@ async function restApiPost() {
 
 
 }
+
+
+
+
