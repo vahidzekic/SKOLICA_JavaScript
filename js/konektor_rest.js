@@ -66,11 +66,11 @@ async function restApiGet() {
 
     var brojElemenataJson = Object.keys(odgovor).length;
 
-    document.getElementById("0").innerHTML = "Trenutno se nalazi " + brojElemenataJson + " elemenata u JOSN bazi.";
+    document.getElementById("a").innerHTML = "Trenutno se nalazi " + brojElemenataJson + " elemenata u JOSN bazi.";
 
     // ispisuje podatke iz JSON objekata pokupljenog sa servera
     for (const clanovi in odgovor) {
-        var clan = odgovor[clanovi].ime + " " + odgovor[clanovi].prezime + " Osoba ima " + odgovor[clanovi].pol;
+        var clan = odgovor[clanovi].ime + " " + odgovor[clanovi].prezime + " Osoba ima " + odgovor[clanovi].godine + " godina.";
         document.getElementById(clanovi).innerHTML = clan;
     }
 
